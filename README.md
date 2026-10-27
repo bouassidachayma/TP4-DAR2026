@@ -51,6 +51,7 @@ Le client utilise une classe anonyme `Runnable` pour écouter le serveur en arri
 
 ## Exécution et Tests
 Démarrage du serveur 4.2.
+
 ![Serveur 4.2 démarre](screenshots/exec_server_start_4_2.png)
 
 Le serveur reçoit le message et renvoie une confirmation.
@@ -82,20 +83,25 @@ Activation de l'option **"Allow multiple instances"** dans IntelliJ pour lancer 
 ## Exécution et Tests
 
 ### 1. Démarrage du serveur
+
 ![Serveur 4.3 démarre](screenshots/exec_server_start_4_3.png)
+
 
 ### 2. Connexions des clients (Message "Join")
 **Alice** rejoint le chat.
 
 ![Alice connectée](screenshots/exec_alice_connect.png)
 
+
 Le serveur enregistre Alice.
 
 ![Serveur voit Alice](screenshots/exec_server_alice.png)
 
+
 **Bob** rejoint le chat.
 
 ![Bob connecté](screenshots/exec_bob_connect.png)
+
 
 Le serveur enregistre Bob.
 
@@ -106,40 +112,49 @@ Le serveur enregistre Bob.
 
 ![Charlie connecté](screenshots/exec_charlie_connect.png)
 
+
 Le serveur enregistre Charlie.
 
 ![Serveur voit Charlie](screenshots/exec_server_charlie.png)
+
 
 ### 3. Diffusion des notifications
 Alice est notifiée quand Bob rejoint.
 
 ![Alice voit Bob](screenshots/exec_alice_sees_bob.png)
 
+
 Alice est notifiée quand Charlie rejoint.
 
 ![Alice voit Charlie](screenshots/exec_alice_sees_charlie.png)
 
+
 Bob est notifié quand Charlie rejoint.
 
 ![Bob voit Charlie](screenshots/exec_bob_sees_charlie.png)
+
 
 ### 4. Diffusion d'un message de chat
 Alice envoie "Salut tout le monde !".
 
 ![Alice envoie](screenshots/exec_alice_sends.png)
 
+
 Bob reçoit le message en temps réel.
 
 ![Bob reçoit](screenshots/exec_bob_receives.png)
+
 
 Charlie reçoit le message en temps réel.
 
 ![Charlie reçoit](screenshots/exec_charlie_receives.png)
 
+
 ### 5. Logs complets du Serveur (Preuve finale)
 La console du serveur montre l'enregistrement des 3 clients et la diffusion du message.
 
 ![Logs complets du serveur](screenshots/exec_server_full_logs.png)
+
 
 ## Synthèse
 1. **UDP vs TCP :** UDP étant non-connecté, le serveur ne détecte pas l'arrivée d'un client. Le client envoie donc un message "Join" automatique au démarrage pour s'enregistrer.
