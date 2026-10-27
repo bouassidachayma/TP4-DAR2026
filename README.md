@@ -86,42 +86,59 @@ Activation de l'option **"Allow multiple instances"** dans IntelliJ pour lancer 
 
 ### 2. Connexions des clients (Message "Join")
 **Alice** rejoint le chat.
+
 ![Alice connectée](screenshots/exec_alice_connect.png)
+
 Le serveur enregistre Alice.
+
 ![Serveur voit Alice](screenshots/exec_server_alice.png)
 
 **Bob** rejoint le chat.
+
 ![Bob connecté](screenshots/exec_bob_connect.png)
+
 Le serveur enregistre Bob.
+
 ![Serveur voit Bob](screenshots/exec_server_bob.png)
 
+
 **Charlie** rejoint le chat.
+
 ![Charlie connecté](screenshots/exec_charlie_connect.png)
+
 Le serveur enregistre Charlie.
+
 ![Serveur voit Charlie](screenshots/exec_server_charlie.png)
 
 ### 3. Diffusion des notifications
 Alice est notifiée quand Bob rejoint.
+
 ![Alice voit Bob](screenshots/exec_alice_sees_bob.png)
 
 Alice est notifiée quand Charlie rejoint.
+
 ![Alice voit Charlie](screenshots/exec_alice_sees_charlie.png)
 
 Bob est notifié quand Charlie rejoint.
+
 ![Bob voit Charlie](screenshots/exec_bob_sees_charlie.png)
 
 ### 4. Diffusion d'un message de chat
 Alice envoie "Salut tout le monde !".
+
 ![Alice envoie](screenshots/exec_alice_sends.png)
 
 Bob reçoit le message en temps réel.
+
 ![Bob reçoit](screenshots/exec_bob_receives.png)
 
 Charlie reçoit le message en temps réel.
+
 ![Charlie reçoit](screenshots/exec_charlie_receives.png)
 
 ### 5. Logs complets du Serveur (Preuve finale)
 La console du serveur montre l'enregistrement des 3 clients et la diffusion du message.
+
 ![Logs complets du serveur](screenshots/exec_server_full_logs.png)
 
 ## Synthèse
